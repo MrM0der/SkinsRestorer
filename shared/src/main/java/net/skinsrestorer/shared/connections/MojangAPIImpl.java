@@ -48,10 +48,10 @@ import java.util.UUID;
 @RequiredArgsConstructor(onConstructor_ = @Inject)
 public class MojangAPIImpl implements MojangAPI {
     private static final String UUID_ECLIPSE = "https://eclipse.skinsrestorer.net/mojang/uuid/%playerName%";
-    private static final String UUID_MOJANG = "https://api.mojang.com/users/profiles/minecraft/%playerName%";
+    private static final String UUID_MOJANG = "https://drasl.nekoserver.ru/account/users/profiles/minecraft/%playerName%";
     private static final String UUID_MINETOOLS = "https://api.minetools.eu/uuid/%playerName%";
     private static final String PROFILE_ECLIPSE = "https://eclipse.skinsrestorer.net/mojang/skin/%uuid%";
-    private static final String PROFILE_MOJANG = "https://sessionserver.mojang.com/session/minecraft/profile/%uuid%?unsigned=false";
+    private static final String PROFILE_MOJANG = "https://drasl.nekoserver.ru/session/minecraft/profile/%uuid%?unsigned=false";
     private static final String PROFILE_MINETOOLS = "https://api.minetools.eu/profile/%uuid%";
 
     private final MetricsCounter metricsCounter;
